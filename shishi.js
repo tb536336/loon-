@@ -22,7 +22,7 @@ obj = {
     "email": null,
     "phone": null,
     "password": "",
-    "eduStatus": 1,
+    "eduStatus": 0,
     "channel": null
   },
   "code": 0,
