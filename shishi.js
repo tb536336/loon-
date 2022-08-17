@@ -28,5 +28,5 @@ let obj = {
   "code": 0,
   "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5Mzk1NCJ9.Q6KM3XD6I2ntV4SQblmAi-LWNN_-jO8NPTX58KtNqe4"
 };
-
-$done({body: JSON.stringify(obj)});
+body = JSON.stringify(obj);
+$done({body})
