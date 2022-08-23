@@ -1,7 +1,7 @@
 
 let obj = JSON.parse($response.body);
 
-let obj = {
+ obj = {
   "msg": "success",
   "result": {
     "id": 93954,
