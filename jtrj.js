@@ -1,47 +1,35 @@
 let obj = JSON.parse($response.body);
 
-obj={
-  "code": 200,
-  "data": {
-    "_id": "6318097f541594085d3c3282",
-    "auth": "o2IaOxPZ97hE6ihaqB9eIl1zhld4",
-    "name": "红烧鲫鱼",
-    "phone": "o2IaOxPZ97hE6ihaqB9eIl1zhld4",
-    "qAuth": "o2IaOxPZ97hE6ihaqB9eIl1zhld4",
-    "__v": 0,
-    "status": 4,
-    "updateTime": "2022-09-07T03:01:19.482Z",
-    "createTime": "2022-09-07T03:01:19.482Z",
-    "online": "2022-09-07T05:01:10.013Z",
-    "level": 4,
-    "followed": 0,
-    "follow": 0,
-    "isOldUserConverted": true,
-    "isBox": true,
-    "coin": 4000,
-    "purchase": [],
-    "exchange": [],
-    "vip": {
-      "history": []
-    },
-    "isVip": true,
-    "isAdmin": true,
-    "version": "2.0.5",
-    "channel": "AppStore",
-    "platform": "iOS",
-    "app": "tailor",
-    "isAppleAuth": false,
-    "authorizationCode": "",
-    "isQAuth": false,
-    "isAuth": true,
-    "gender": 1,
-    "moto": "她/他说无话可说～",
-    "profile": "default/profile_default.png",
-    "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoOiaSAZjqZicoCCoUCf4DzOA1nhY4uCNphia7k42SBu1stOwPNkjCJTGV4Ks7G2u0uV8xLnl6mT4KrQ/132",
-    "id": "6318097f541594085d3c3282",
-    "genderV": "女",
-    "statusV": "正常"
-  }
+obj= {
+  "errno" : 0,
+  "data" : [
+    {
+      "id" : 4097,
+      "show_times" : [
+        {
+          "interval" : 60,
+          "ad_id" : 9999,
+          "start_time" : "00:00:00",
+          "end_time" : "01:00:00"
+        }
+      ],
+      "click_pct" : 100,
+      "endtime" : 1668355199,
+      "url" : "cailianshe://article_detail?article_id=1182003",
+      "zip_url" : "",
+      "type" : 203,
+      "title" : "",
+      "logo" : "https://img.cls.cn/images/20221112/iYg4kG7ttP.png",
+      "adType" : 10,
+      "vedio_path" : "",
+      "strtime" : 1668268800,
+      "monitorUrl" : "",
+      "adTag" : "",
+      "weight" : 10,
+      "vedio_path2" : ""
+    }
+  ]
 }
+
 body = JSON.stringify(obj);
 $done({body})
