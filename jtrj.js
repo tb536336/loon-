@@ -7,7 +7,7 @@ obj= {
       "id" : 4097,
       "show_times" : [
         {
-          "interval" : 60,
+          "interval" : 0,
           "ad_id" : 9999,
           "start_time" : "00:00:00",
           "end_time" : "01:00:00"
