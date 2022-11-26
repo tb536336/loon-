@@ -1,11 +1,8 @@
 
 #!name=小红书
 #!desc=小红书去广告
-#!system=ios
-
 
 [Script]
-
 # > XiaoHongShu_小红书_开屏广告@ddgksf2013
 xiaohongshu = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config,requires-body=1,max-size=0,script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/xiaohongshu.js
 # > XiaoHongShu_小红书_瀑布流@ddgksf2013
@@ -14,7 +11,6 @@ xiaohongshu = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/ap
 xiaohongshu = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\?,requires-body=1,max-size=0,script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/xiaohongshu.js
 
 [Map Local]
-
 # > XiaoHongShu_小红书_AdEngage@ddgksf2013
 ^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/tag\/ads_engage data="https://raw.githubusercontent.com/Keywos/Rule/main/mocks/reject-dict.json"
 # > XiaoHongShu_小红书_AdRecord@ddgksf2013
@@ -29,5 +25,4 @@ xiaohongshu = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/ap
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/user\/teenager\/status data="https://raw.githubusercontent.com/Keywos/Rule/main/mocks/reject-dict.json"
 
 [MITM]
-
 hostname = %APPEND% edith.xiaohongshu.com,www.xiaohongshu.com,pages.xiaohongshu.com,referee.xiaohongshu.com
